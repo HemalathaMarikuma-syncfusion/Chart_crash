@@ -26,8 +26,8 @@ namespace FireBase_Demo
     {
         public ObservableCollection<Production> DateTimeData { get; set; }
 
-        public DateTime Minimum { get; set; }
-        public DateTime Maximum { get; set; }
+        public DateTime Minimum { get; set; } = new DateTime(2020, 5, 1);
+        public DateTime Maximum { get; set; } = new DateTime(2020, 2, 1);
         public DateTimeAxisViewModel()
         {
             DateTimeData = new ObservableCollection<Production>();

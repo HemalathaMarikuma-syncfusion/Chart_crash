@@ -18,7 +18,7 @@
                     </Grid>
                 </syncfusion:SfExpander.Header>
                 <syncfusion:SfExpander.Content>
-                    <chart:SfChart x:Name="Chart" HeightRequest="400" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <chart:SfChart x:Name="Chart"  HeightRequest="400" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                         <chart:SfChart.Margin>
                             <OnPlatform x:TypeArguments="Thickness" WinPhone="0,0,15,0" />
                         </chart:SfChart.Margin>
@@ -26,7 +26,7 @@
                             <chart:ChartTitle Text="Food Production - 2017 " />
                         </chart:SfChart.Title>
                         <chart:SfChart.PrimaryAxis>
-                            <chart:DateTimeAxis EdgeLabelsDrawingMode="Shift" ZoomFactor="0.2" ZoomPosition="0.6">
+                            <chart:DateTimeAxis EdgeLabelsDrawingMode="Shift" Minimum="{Binding Minimum}" Maximum="{Binding Minimum}" ZoomFactor="0.2" ZoomPosition="0.6">
                                 <chart:DateTimeAxis.Title>
                                     <chart:ChartAxisTitle Text="Production across year">
                                     </chart:ChartAxisTitle>
